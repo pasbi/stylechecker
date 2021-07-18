@@ -7,7 +7,7 @@ Based on that type, a number of checks are performed.
 Basic checks:
  - No trailing whitespace
  - No tabs
- - No \r\n linebreaks
+ - No `\r\n` linebreaks
  - single blank line at EoF
 
 C++-checks:

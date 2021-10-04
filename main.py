@@ -12,7 +12,7 @@ base_checks = [c.no_trailing_whitespace, c.no_tabs, c.unix_linebreak, c.single_b
 checker_map = {
   re.compile("^.*\.cpp$", re.IGNORECASE): base_checks + [c.no_bad_cpp_patterns, c.limit_line_length],
   re.compile("^.*\.h$", re.IGNORECASE): base_checks + [c.no_bad_cpp_patterns, c.limit_line_length],
-  # re.compile("^.*\.py$", re.IGNORECASE): base_checks,
+  re.compile("^.*\.py$", re.IGNORECASE): base_checks,
   re.compile("^CMakeLists.txt$"): base_checks,
   re.compile("^.*\.cmake$", re.IGNORECASE): base_checks,
   re.compile("^.*\.in$", re.IGNORECASE): base_checks,
